@@ -71,10 +71,17 @@ section {
             background-color: $tertiary-color;
             padding: 10px 10px;
             border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s ease-in;
             h2 {
                 font-weight: 500;
                 font-size: 25px;
             }
+            
+        }
+
+        .container-information:hover{
+            transform: scale(1.1);
         }
     }
 }
@@ -82,6 +89,7 @@ section {
 .sobre-mim {
     background-color: $primary-color;
     color: $secondary-color;
+    height: 150vh;
 
     h1 {
         font-size: 30px;
@@ -93,8 +101,8 @@ section {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 20px;
-        width: 60%;
+        gap: 30px;
+        width: 80%;
         margin-top: 30px;
 
         .sobre-mim-text {
@@ -111,7 +119,8 @@ section {
         }
 
         .profissional-image {
-            width: 80%;
+            width: 300px;
+            height: 300px;
             border-radius: 100%;
             border: 1px solid $secondary-color;
         }
@@ -138,12 +147,51 @@ section {
     }
 }
 
-.projetos-artigos{
-
+.clientes{
+    height: 200vh;
     h1 {
         font-size: 30px;
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    .clientes-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 40px;
+        
+        
+        .cliente{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding: 0;
+            width: 350px;
+            height: 250px;
+            box-shadow: 3px 3px 3px 3px $tertiary-color;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+            h2{
+                font-weight: 500;
+                font-size: 24px;
+                margin-left: 10px;
+            }
+
+            .cliente-foto{
+                width: 100%;
+                height: 200px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                cursor: pointer;
+            }
+
+            .cliente-foto:hover{
+                opacity: 0.6;
+            }
+        }
     }
 
 }
@@ -176,11 +224,13 @@ section {
     
 
     .sobre-mim{
-        height: 200vh;
+        height: 250vh;
 
         .sobre-mim-informations{
             flex-direction: column;
             width: 80%;
+
+            
         }
 
         .sobre-mim-formacao-academia{
@@ -188,6 +238,16 @@ section {
             .formacoes{
                 flex-direction: column;
             }
+        }
+    }
+
+    .clientes{
+        height: 500vh;
+        .clientes-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
     

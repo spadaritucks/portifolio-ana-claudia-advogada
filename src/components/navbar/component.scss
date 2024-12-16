@@ -10,12 +10,7 @@
     background-color: $secondary-color;
     position: fixed;
     z-index: 1000;
-
-    h1 {
-        font-size: 24px;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+    
 
     .nav-links {
         display: flex;
