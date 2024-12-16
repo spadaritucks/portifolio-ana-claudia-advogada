@@ -196,6 +196,52 @@ section {
 
 }
 
+.artigos{
+
+    h1 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .artigos-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+
+        .artigo{
+            width: 400px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            background-color: $tertiary-color;
+            padding: 20px;
+            border-radius: 20px;
+            transition: 0.3s ease-in-out;
+
+            h2{
+                font-size: 26px;
+                font-weight: 700;
+            }
+
+            .button-artigos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .artigo:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
 @media (max-width:990px){
 
     section{
@@ -253,6 +299,19 @@ section {
             justify-content: center;
         }
     }
+
+    .artigos{
+        height: 350vh;
+
+        .artigos-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
     
 }
+
+
 

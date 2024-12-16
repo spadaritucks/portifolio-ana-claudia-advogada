@@ -25,7 +25,7 @@ export default function Navbar () {
                 <li><Link href='#area-de-atuacao' >Area de Atuação</Link></li>
                 <li><Link href='#sobre-mim' >Sobre mim</Link></li>
                 <li><Link href='#clientes' >Clientes</Link></li>
-                
+                <li><Link href='#artigos' >Artigos</Link></li>
             </ul>
             
             {toogleOpen ? <div className="hamburguer-menu" onClick={handleOpenMenu}><CloseIcon sx={{fontSize: 50}}/></div> : 

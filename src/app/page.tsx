@@ -20,6 +20,7 @@ import rafaelbittencourt from '@/../public/rafaelbittencourt.jpeg'
 import djlucasbeat from '@/../public/djlucasbeat.jpeg'
 import mcleozinho from '@/../public/mcleozinho (1).jpeg'
 import andrelemos from '@/../public/andrelemos.jpeg'
+import Button from "@/components/button/component";
 
 export default function Home() {
 
@@ -164,16 +165,61 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="artigos">
-        <h1>Artigos</h1>
+      <section className="artigos" id="artigos">
+        <h1>Ultimos Artigos</h1>
         <div className="artigos-container">
-          <div className="artigo">
-            <h2></h2>
-            <p></p>
-            <small>- Doutora Ana Claudia</small>
+        <div className="button-artigos" style={{ gridColumn: '1/-1' }}>
+            <Link href="https://anaclaudiazandomenighi.jusbrasil.com.br/">
+            <Button ButtonName="Ver Mais Artigos" type="button" variant="primary"  /></Link>
           </div>
+          <div className="artigo">
+            <h2>Como saber se estou recebendo meus direitos autorais.</h2>
+            <p>Como saber se estou recebendo corretamente meus direitos autorais? No ramo autoral principalmente com esse advento digital, 
+              o advento das inteligências artificiais, cada vez tem ficado mais...</p>
+            
+            <Link href="https://www.jusbrasil.com.br/artigos/como-saber-se-estou-recebendo-meus-direitos-autorais/2814356447?_gl=1*1m2ds1k*_gcl_au*ODI0MTgxMjM0LjE3MzQzNTU5MjU.*_ga*NzQyMTQ0MDM2LjE3MzQzNTU5MjU.*_ga_QCSXBQ8XPZ*MTczNDM3MzM1Ni4yLjEuMTczNDM3NDc0Ni42MC4wLjA.">
+            <Button ButtonName="Saiba Mais" type="button" variant="primary"  /></Link>
+          </div>
+          <div className="artigo">
+            <h2>IA e Musica</h2>
+            <p>Direito autoral , inteligências artificias, o que pode ser feito? Hoje as inteligências artificiais na luta com os criadores não criadores 
+              de conteúdo criadores artistas, as inteligências artificiais...</p>
+            
+            <Link href="https://www.jusbrasil.com.br/artigos/ia-e-musica/2802746084?_gl=1*1t9ak6f*_gcl_au*ODI0MTgxMjM0LjE3MzQzNTU5MjU.*_ga*NzQyMTQ0MDM2LjE3MzQzNTU5MjU.*_ga_QCSXBQ8XPZ*MTczNDM3MzM1Ni4yLjEuMTczNDM3NjIwMy4yLjAuMA..">
+            <Button ButtonName="Saiba Mais" type="button" variant="primary"  /></Link>
+          </div>
+         
+          <div className="artigo">
+            <h2>Regulamentação para uso de IA na música sem prejudicar compositores.</h2>
+            <p>Em carta aberta artistas do mundo todo se uniram para pedir proteção contra o uso indiscriminado de IA na música e vindo assim a 
+              prejudicar compositores os artistas com a imitação de suas criações e...</p>
+              <Link href="https://www.jusbrasil.com.br/artigos/regulamentacao-para-uso-de-ia-na-musica-sem-prejudicar-compositores/2335846294?_gl=1*1i1x7zf*_gcl_au*ODI0MTgxMjM0LjE3MzQzNTU5MjU.*_ga*NzQyMTQ0MDM2LjE3MzQzNTU5MjU.*_ga_QCSXBQ8XPZ*MTczNDM3MzM1Ni4yLjEuMTczNDM3NjIxNi41Mi4wLjA.">
+              <Button ButtonName="Saiba Mais" type="button" variant="primary"  /></Link>
+          </div>
+          <div className="artigo">
+            <h2> Como afeta o direito autoral a compra de "players".</h2>
+            <p>Veja são inúmeras as promessas encontradas de engajamento, de que seus players irão aumentar, sua visibilidade enfim.. 
+              Artistas do mundo todo começaram a receber as cartinhas do spotify que...</p>
+              <Link href="https://www.jusbrasil.com.br/artigos/como-afeta-o-direito-autoral-a-compra-de-players/2239426322?_gl=1*f101za*_gcl_au*ODI0MTgxMjM0LjE3MzQzNTU5MjU.*_ga*NzQyMTQ0MDM2LjE3MzQzNTU5MjU.*_ga_QCSXBQ8XPZ*MTczNDM3MzM1Ni4yLjEuMTczNDM3NjUwOC42MC4wLjA.">
+              <Button ButtonName="Saiba Mais" type="button" variant="primary"  /></Link>
+          </div>
+          <div className="artigo">
+            <h2>Importância das parcerias em obras e dos direitos autorais.</h2>
+            <p>O mercado cada vez inovando mais e as parcerias, hoje chamadas de feats tem sido de grande importância especialmente na era digital. Lembramos que, uma música em parceria irá aparecer na página de...</p>
+            <Link href="https://www.jusbrasil.com.br/artigos/importancia-das-parcerias-em-obras-e-dos-direitos-autorais/2183880038?_gl=1*1gbgzko*_gcl_au*ODI0MTgxMjM0LjE3MzQzNTU5MjU.*_ga*NzQyMTQ0MDM2LjE3MzQzNTU5MjU.*_ga_QCSXBQ8XPZ*MTczNDM3MzM1Ni4yLjEuMTczNDM3NjUxNi41Mi4wLjA.">
+            <Button ButtonName="Saiba Mais" type="button" variant="primary"  /></Link>
+          </div>
+          <div className="artigo">
+            <h2>O que diz a Lei Brasileira sobre o domínio público do Mickey Mouse.</h2>
+            <p>Claro que foi a notícia do ano. Por se tratar de notória figura se tornou assim mais importante ainda, já que transcorreram os 95 anos da publicação do curta metragem de estreia do Mickey Mouse,...</p>
+            <Link href="https://www.jusbrasil.com.br/artigos/o-que-diz-a-lei-brasileira-sobre-o-dominio-publico-do-mickey-mouse/2178803742?_gl=1*1hzjbtg*_gcl_au*ODI0MTgxMjM0LjE3MzQzNTU5MjU.*_ga*NzQyMTQ0MDM2LjE3MzQzNTU5MjU.*_ga_QCSXBQ8XPZ*MTczNDM3MzM1Ni4yLjEuMTczNDM3NjU0My4yNS4wLjA.">
+            <Button ButtonName="Saiba Mais" type="button" variant="primary"  /></Link>
+          </div>
+
+
+        
         </div>
-      </section> */}
+      </section>
     </Main>
   )
 }
