@@ -1,5 +1,5 @@
-@import '../../styles/color-variables.scss';
-.nav-area{
+@import "../../styles/color-variables.scss";
+.nav-area {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,27 +11,74 @@
     position: fixed;
     z-index: 1000;
 
-    h1{
+    h1 {
         font-size: 24px;
         font-weight: 500;
         text-transform: uppercase;
     }
 
-    .nav-links{
+    .nav-links {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 25px;
 
-        li{
-            a{
+        li {
+            a {
                 text-decoration: none;
                 opacity: 0.6;
             }
 
-            a:hover{
+            a:hover {
                 color: $primary-color;
             }
+        }
+    }
+
+    .hamburguer-menu {
+        display: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        z-index: 2000;
+    }
+
+    .hamburguer-menu:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 990px) {
+    .nav-area {
+        padding: 0;
+
+        .logo{
+            margin-left: 20px;
+        }
+
+        .hamburguer-menu {
+            display: block;
+        }
+
+        h1,
+        .hamburguer-menu {
+            margin: 30px;
+        }
+        .nav-links {
+            position: absolute;
+            top: -220px;
+            width: 100%;
+            padding: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background-color: $tertiary-color;
+            transition: 0.4s ease-in-out;
+            opacity: 0;
+        }
+
+        .nav-links.open {
+            opacity: 1;
+            top: 90px;
         }
     }
 }
