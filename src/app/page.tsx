@@ -163,6 +163,17 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* <section className="artigos">
+        <h1>Artigos</h1>
+        <div className="artigos-container">
+          <div className="artigo">
+            <h2></h2>
+            <p></p>
+            <small>- Doutora Ana Claudia</small>
+          </div>
+        </div>
+      </section> */}
     </Main>
   )
 }
